@@ -1,0 +1,317 @@
+/* 
+Color pallete. This section defines variables for the color pallete,
+so that we can refer to particular colors by name instead of hexadecimal values.
+This is applied to the 'root' psuedo-element, which just means that these color
+variables are available to be used anywhere in our html document
+*/
+:root {
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    --colour1: #B0ACB0;
+    --colour2: #E2DDDF;
+    --colour3: #85EBD9;
+    --colour4: #3D898D;
+    --colour5: #2F404D;
+    background-image: linear-gradient(#E2DDDF, #A8A8A8);
+
+    /* add in other color variables for color pallete */
+}
+
+/* Defines the main container size, we are limiting to 72em max and centring in the viewport */
+.main-container {
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Oxanium;
+    color: var(--colour1);
+
+    /* TODO: set the main font color */
+}
+
+/* Here we define the aspects of style of our elements other than their grid layout */
+.banner {
+    background-color: var(--colour5);
+    padding: 1em;
+}
+
+.banner-title {
+    font-size: 6em; 
+}
+
+.banner-subtitle {
+    font-size: 2.25em;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+
+.questions{
+    background-color: var(--colour5);
+    color: var(--colour3);
+    font-size: 2.25em;
+    text-align: center; 
+    padding: 0.3em;
+    width: 90%
+}
+
+.intro {
+    color: black;
+    font-size: 1.625em;
+    text-align: center;
+}
+
+.trans {
+    color: black;
+    font-size: 2.25em;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    font-size: 2.25em;
+    block-size: fit-content;
+    color: #595959;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.willthis {
+    font-size: 3em;
+    color: black;
+    text-align: center;
+}
+
+.l-b-bold {
+    font-weight: 900;
+    color: var(--colour3);
+}
+
+.d-b-bold {
+    font-weight: 900;
+    color: var(--colour4);
+}
+
+
+
+/* now we create names for the grid areas for specific elements */
+#banner {
+    grid-area: ban;
+}
+
+#question-are {
+    grid-area: qar;
+}
+
+#question-will {
+    grid-area: qwi;
+}
+
+#question-is {
+    grid-area: qis;
+}
+
+#intro {
+    grid-area: int;
+}
+
+#trans {
+    grid-area: tra;
+}
+
+#know-image {
+    grid-area: kni;
+}
+
+#know-text {
+    grid-area: knt;
+}
+
+#w1 {
+    grid-area: wt1;  
+}
+
+#phys-image {
+    grid-area: phi;
+}
+
+#phys-text {
+    grid-area: pht;
+}
+
+#w2 {
+    grid-area: wt2;  
+}
+
+#emot-image {
+    grid-area: emi;
+}
+
+#emot-text {
+    grid-area: emt;
+}
+
+#w3 {
+    grid-area: wt3;  
+}
+
+#inte-image {
+    grid-area: iri;
+}
+
+#inte-text {
+    grid-area: irt;
+}
+
+#w4 {
+    grid-area: wt4;  
+}
+
+#fina-image {
+    grid-area: fii;
+}
+
+/* 
+Responsive Layout breakpoints. We start 'mobile-first' i.e. we define how the layout should look
+for the smallest screen sizes. In this case we want a single column that spans the main container.
+Because this CSS definition comes first, it will apply by default. Then we override it below with 
+media queries for progressively bigger screen widths
+*/
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+.main-container {
+        /* TODO: setup the grid-template for mobile phone layout */
+        grid-template: 
+        "ban ban ban ban" minmax(6em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "qar qar qar qar" minmax(4em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "qwi qwi qwi qwi" minmax(4em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "qis qis qis qis" minmax(4em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "int int int int" minmax(10em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "tra tra tra tra" minmax(4em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "kni kni kni kni" minmax(auto, auto)
+        "knt knt knt knt" minmax(auto, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "wt1 wt1 wt1 wt1" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "phi phi phi phi" minmax(auto, auto)
+        "pht pht pht pht" minmax(auto, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "wt2 wt2 wt2 wt2" minmax(12em, auto)
+    }
+    .know-text{
+        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
+    }
+        
+    .phys-text{
+        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+    }
+    
+
+    
+@media (min-width: 50em) {
+    .main-container {
+            /* TODO: setup the grid-template for tablet layout */
+        grid-template:
+        "ban ban ban ban ban ban ban ban" minmax(6em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "qar qar qar qar qwi qwi qwi qwi" minmax(4em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .   .  qis qis qis qis  .   . " minmax(4em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "int int int int int int int int" minmax(10em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "tra tra tra tra tra tra tra tra" minmax(4em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "kni kni kni kni kni kni kni kni" minmax(auto, auto)
+        "knt knt knt knt knt knt knt knt" minmax(auto, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt1 wt1 wt1 wt1 wt1 wt1 wt1 wt1" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "phi phi phi phi phi phi phi phi" minmax(auto, auto)
+        "pht pht pht pht pht pht pht pht" minmax(auto, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt2 wt2 wt2 wt2 wt2 wt2 wt2 wt2" minmax(12em, auto)
+    }
+    .know-text{
+        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
+    }
+        
+    .phys-text{
+        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+    }
+}
+    
+@media (min-width: 75em) {
+    .main-container {
+        display: grid;
+        align-items: center;
+        grid-template: 
+        "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "qar qar qar qar qwi qwi qwi qwi qis qis qis qis" minmax(10em, auto)
+        " .  int int int int int int int int int int  . " minmax(10em, auto)
+        " .  tra tra tra tra tra tra tra tra tra tra  . " minmax(10em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "kni kni kni kni kni kni kni kni knt knt knt knt" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "wt1 wt1 wt1 wt1 wt1 wt1 wt1 wt1 wt1 wt1 wt1 wt1" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "pht pht pht pht phi phi phi phi phi phi phi phi" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt2 wt2 wt2 wt2 wt2 wt2 wt2 wt2 wt2 wt2 wt2 wt2" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "emi emi emi emi emi emi emi emi emt emt emt emt" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt3 wt3 wt3 wt3 wt3 wt3 wt3 wt3 wt3 wt3 wt3 wt3" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "irt irt irt irt iri iri iri iri iri iri iri iri" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "fii fii fii fii fii fii fii fii fii fii fii fii" minmax(32em, auto)
+    }
+
+    .questions {
+        width: 11em
+    }
+
+    .know-text{
+        background-image: linear-gradient(to right, rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+        transform: translateX(-20%);
+        width: 130%
+    }
+        
+    .phys-text{
+        background-image: linear-gradient(to left, rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+        transform: translateX(-5%);
+        text-align: right;
+        width: 130%
+    }
+
+    .emot-text{
+        background-image: linear-gradient(to right, rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        transform: translateX(-20%);
+        width: 130%
+    }
+
+    .inte-text{
+        background-image: linear-gradient(to left, rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        transform: translateX(-5%);
+        text-align: right;
+        width: 130%
+    }
+    
+}
+
