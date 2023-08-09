@@ -86,6 +86,13 @@ variables are available to be used anywhere in our html document
     text-align: center;
 }
 
+.year {
+    font-size: 6em;
+    text-align: center;
+    font-weight: 900;
+    color: #2F404D;
+}
+
 .l-b-bold {
     font-weight: 900;
     color: var(--colour3);
@@ -169,6 +176,10 @@ variables are available to be used anywhere in our html document
 
 #w4 {
     grid-area: wt4;  
+}
+
+#year {
+    grid-area: yea;
 }
 
 #fina-image {
@@ -279,6 +290,8 @@ media queries for progressively bigger screen widths
         "irt irt irt irt iri iri iri iri iri iri iri iri" minmax(32em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         "wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "yea yea yea yea yea yea yea yea yea yea yea yea" minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         "fii fii fii fii fii fii fii fii fii fii fii fii" minmax(32em, auto)
     }
