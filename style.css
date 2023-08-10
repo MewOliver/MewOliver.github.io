@@ -93,6 +93,12 @@ variables are available to be used anywhere in our html document
     color: #2F404D;
 }
 
+.city-text {
+    font-size: 3em;
+    text-align: center;
+    color:#B0ACB0;
+}
+
 .l-b-bold {
     font-weight: 900;
     color: var(--colour3);
@@ -103,7 +109,18 @@ variables are available to be used anywhere in our html document
     color: var(--colour4);
 }
 
-
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
 
 /* now we create names for the grid areas for specific elements */
 #banner {
@@ -181,6 +198,31 @@ variables are available to be used anywhere in our html document
 #year {
     grid-area: yea;
 }
+
+#city1-image {
+    grid-area: c1i;
+}
+
+#city1-text {
+    grid-area: c1t;
+}
+
+#city2-image {
+    grid-area: c2i;
+}
+
+#city2-text {
+    grid-area: c2t;
+}
+
+#city3-image {
+    grid-area: c3i;
+}
+
+#city3-text {
+    grid-area: c3t;
+}
+
 
 #fina-image {
     grid-area: fii;
@@ -292,7 +334,19 @@ media queries for progressively bigger screen widths
         "wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4" minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         "yea yea yea yea yea yea yea yea yea yea yea yea" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        " .  c1i c1i c1i c1i c1i c1i c1i c1i c1i c1i  . " minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c1t c1t c1t c1t c1t c1t c1t c1t c1t c1t  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c2i c2i c2i c2i c2i c2i c2i c2i c2i c2i  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c2t c2t c2t c2t c2t c2t c2t c2t c2t c2t  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c3i c3i c3i c3i c3i c3i c3i c3i c3i c3i  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c3t c3t c3t c3t c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)     
         "fii fii fii fii fii fii fii fii fii fii fii fii" minmax(32em, auto)
     }
 
