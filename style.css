@@ -12,8 +12,7 @@ variables are available to be used anywhere in our html document
     --colour3: #85EBD9;
     --colour4: #3D898D;
     --colour5: #2F404D;
-    background-image: linear-gradient(#E2DDDF, #A8A8A8);
-    background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
+
 
     /* add in other color variables for color pallete */
 }
@@ -21,7 +20,7 @@ variables are available to be used anywhere in our html document
 /* Defines the main container size, we are limiting to 72em max and centring in the viewport */
 .main-container {
     max-width: 72em;
-    margin: 0 auto;
+    margin: auto;
     font-family: Oxanium;
     color: var(--colour1);
 
@@ -263,6 +262,32 @@ media queries for progressively bigger screen widths
         "pht pht pht pht" minmax(auto, auto)
         " .   .   .   . " minmax(2em, auto)
         "wt2 wt2 wt2 wt2" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "emi emi emi emi" minmax(32em, auto)
+        "emt emt emt emt" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "wt3 wt3 wt3 wt3" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "iri iri iri iri" minmax(32em, auto)
+        "irt irt irt irt" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "wt4 wt4 wt4 wt4" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "yea yea yea yea" minmax(12em, auto)
+        " .   .   .   . " minmax(4em, auto)
+        " .  c1i c1i  . " minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        " .  c1t c1t  . " minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        " .  c2i c2i  . " minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        " .  c2t c2t  . " minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        " .  c3i c3i  . " minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        " .  c3t c3t  . " minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)     
+        "fii fii fii fii" minmax(32em, auto)
     }
     .know-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
@@ -270,6 +295,18 @@ media queries for progressively bigger screen widths
         
     .phys-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+    }
+    
+    .emot-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+    }
+
+    .inte-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+    }
+
+    .main-container {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 100%);
     }
     
 
@@ -297,6 +334,32 @@ media queries for progressively bigger screen widths
         "pht pht pht pht pht pht pht pht" minmax(auto, auto)
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
         "wt2 wt2 wt2 wt2 wt2 wt2 wt2 wt2" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "emi emi emi emi emi emi emi emi" minmax(32em, auto)
+        "emt emt emt emt emt emt emt emt" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt3 wt3 wt3 wt3 wt3 wt3 wt3 wt3" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "iri iri iri iri iri iri iri iri" minmax(32em, auto)
+        "irt irt irt irt irt irt irt irt" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "yea yea yea yea yea yea yea yea" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(4em, auto)
+        " .  c1i c1i c1i c1i c1i c1i  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c1t c1t c1t c1t c1t c1t  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c2i c2i c2i c2i c2i c2i  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c2t c2t c2t c2t c2t c2t  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c3i c3i c3i c3i c3i c3i  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)     
+        "fii fii fii fii fii fii fii fii" minmax(32em, auto)
     }
     .know-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
@@ -304,6 +367,17 @@ media queries for progressively bigger screen widths
         
     .phys-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+    }
+
+    .emot-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+    }
+
+    .inte-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+    }
+    .main-container{
+        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%, rgba(26,34,41,1) 100%);
     }
 }
     
@@ -379,6 +453,14 @@ media queries for progressively bigger screen widths
         transform: translateX(-5%);
         text-align: right;
         width: 130%
+    }
+
+    :root {
+        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
+    }
+
+    .main-container {
+        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
     }
     
 }
