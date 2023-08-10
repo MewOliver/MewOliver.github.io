@@ -13,6 +13,7 @@ variables are available to be used anywhere in our html document
     --colour4: #3D898D;
     --colour5: #2F404D;
     background-image: linear-gradient(#E2DDDF, #A8A8A8);
+    background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
 
     /* add in other color variables for color pallete */
 }
