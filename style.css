@@ -12,9 +12,6 @@ variables are available to be used anywhere in our html document
     --colour3: #85EBD9;
     --colour4: #3D898D;
     --colour5: #2F404D;
-
-
-    /* add in other color variables for color pallete */
 }
 
 /* Defines the main container size, we are limiting to 72em max and centring in the viewport */
