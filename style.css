@@ -96,12 +96,6 @@ variables are available to be used anywhere in our html document
     color:#B0ACB0;
 }
 
-.final-text {
-    font-size: 5em;
-    font-weight: 900;
- 
-}
-
 .l-b-bold {
     font-weight: 900;
     color: var(--colour3);
@@ -327,8 +321,6 @@ media queries for progressively bigger screen widths
         transform: translateY(120%);
     }
     
-
-    
 @media (min-width: 50em) {
     .main-container {
             /* TODO: setup the grid-template for tablet layout */
@@ -485,9 +477,11 @@ media queries for progressively bigger screen widths
     }
 
     .final-text {
+        font-size: 5em;
+        font-weight: 900;
         transform: translateY(120%);
     }
-
+ 
     :root {
         background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
     }
