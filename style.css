@@ -317,6 +317,10 @@ media queries for progressively bigger screen widths
         background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 100%);
     }
 
+    :root {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 100%);
+    }
+
     .final-text {
         font-size: 2em;
         font-weight: 900;
@@ -392,6 +396,10 @@ media queries for progressively bigger screen widths
         background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
     }
     .main-container{
+        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%, rgba(26,34,41,1) 100%);
+    }
+
+    :root{
         background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%, rgba(26,34,41,1) 100%);
     }
 
