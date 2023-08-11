@@ -244,6 +244,7 @@ media queries for progressively bigger screen widths
     display: grid;
     column-gap: 1em;
 }
+
 .main-container {
         /* TODO: setup the grid-template for mobile phone layout */
         grid-template: 
@@ -292,7 +293,8 @@ media queries for progressively bigger screen widths
         " .  c3i c3i  . " minmax(12em, auto)
         " .   .   .   . " minmax(2em, auto)
         " .  c3t c3t  . " minmax(12em, auto)
-        " .   .   .   . " minmax(2em, auto)     
+        " .   .   .   . " minmax(2em, auto)  
+        "fit fit fit fit" minmax(0em, auto)     
         "fii fii fii fii" minmax(32em, auto)
     }
     .know-text{
@@ -313,6 +315,12 @@ media queries for progressively bigger screen widths
 
     .main-container {
         background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 100%);
+    }
+
+    .final-text {
+        font-size: 2em;
+        font-weight: 900;
+        transform: translateY(120%);
     }
     
 
@@ -364,7 +372,8 @@ media queries for progressively bigger screen widths
         " .  c3i c3i c3i c3i c3i c3i  . " minmax(12em, auto)
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
         " .  c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)     
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)   
+        "fit fit fit fit fit fit fit fit" minmax(0em, auto)    
         "fii fii fii fii fii fii fii fii" minmax(32em, auto)
     }
     .know-text{
@@ -385,11 +394,16 @@ media queries for progressively bigger screen widths
     .main-container{
         background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%, rgba(26,34,41,1) 100%);
     }
+
+    .final-text {
+        font-size: 3em;
+        font-weight: 900;
+        transform: translateY(120%);
+    }
 }
     
 @media (min-width: 75em) {
     .main-container {
-        display: grid;
         align-items: center;
         grid-template: 
         "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
@@ -433,7 +447,7 @@ media queries for progressively bigger screen widths
     }
 
     .questions {
-        width: 11em
+        width: 10em
     }
 
     .know-text{
@@ -472,9 +486,6 @@ media queries for progressively bigger screen widths
 
     .main-container {
         background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
-    }
-
-
-    
+    } 
 }
 
