@@ -12,8 +12,7 @@ variables are available to be used anywhere in our html document
     --colour3: #85EBD9;
     --colour4: #3D898D;
     --colour5: #2F404D;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-right: 1em;
 }
 
 /* Defines the main container size, we are limiting to 72em max and centring in the viewport */
