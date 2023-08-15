@@ -111,6 +111,12 @@ variables are available to be used anywhere in our html document
     color: #85EBD9;
 }
 
+.d-g-bold {
+    font-weight: 900;
+    color: #3d3b3d;
+    -webkit-text-stroke: 0.1px #85EBD9;
+}
+
 /* now we create names for the grid areas for specific elements */
 #banner {
     grid-area: ban;
@@ -433,9 +439,9 @@ media queries for progressively bigger screen widths
         " .  c3i c3i c3i c3i c3i c3i c3i c3i c3i c3i  . " minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         " .  c3t c3t c3t c3t c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "fit fit fit fit fit fit fit fit fit fit fit fit" minmax(0em, 0em)     
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)   
         "fii fii fii fii fii fii fii fii fii fii fii fii" minmax(32em, auto)
+        "fit fit fit fit fit fit fit fit fit fit fit fit" minmax(0em, auto)  
     }
 
     .questions {
@@ -469,9 +475,11 @@ media queries for progressively bigger screen widths
     }
 
     .final-text {
-        font-size: 5em;
+        font-size: 4em;
         font-weight: 900;
-        transform: translateY(60%);
+        transform: translate(-1%, -105%);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
     }
  
     :root {
