@@ -12,6 +12,8 @@ variables are available to be used anywhere in our html document
     --colour3: #85EBD9;
     --colour4: #3D898D;
     --colour5: #2F404D;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 /* Defines the main container size, we are limiting to 72em max and centring in the viewport */
@@ -56,7 +58,7 @@ variables are available to be used anywhere in our html document
     font-size: 2.25em;
     text-align: center; 
     padding: 0.3em;
-    width: 90%
+    width: 90%;
 }
 
 .intro {
@@ -327,11 +329,13 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 1.9em;
         font-weight: 900;
-        transform: translate(-1%, 102%);
+        transform: translate(-1%, 106%);
         writing-mode: vertical-rl;
         text-orientation: upright;
         z-index: 1
     }
+
+
     
 @media (min-width: 50em) {
     .main-container {
@@ -412,7 +416,7 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 2.7em;
         font-weight: 900;
-        transform: translate(-1%, 103%);
+        transform: translate(-1%, 106%);
         writing-mode: vertical-rl;
         text-orientation: upright;
         z-index: 1

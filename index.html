@@ -107,25 +107,8 @@
       AM <span class="l-b-bold fade-in">I</span> STILL <span class="l-b-bold">ME</span>?</span>
     </div>
 
-    <div class="final-image-container fade-in" id="fina-image"><img class="image" src="./Images/Final.jpeg"></img></div>
+    <div class="final-image-container" id="fina-image"><img class="image" src="./Images/Final.jpeg"></img></div>
   </div>         
-  <script>
-    const fadeInSection = document.querySelectorAll('.fade-in'); // Add a dot before 'fade-in'
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in-active');
-            }
-        });
-    }, {
-        threshold: 0.5 // Adjust the threshold as needed
-    });
-
-    fadeInSection.forEach(section => {
-        observer.observe(section);
-    });
-</script>
-
 </body>
 </html>
   
