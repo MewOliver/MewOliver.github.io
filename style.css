@@ -285,9 +285,9 @@ media queries for progressively bigger screen widths
         " .  c3i c3i  . " minmax(12em, auto)
         " .   .   .   . " minmax(2em, auto)
         " .  c3t c3t  . " minmax(12em, auto)
-        " .   .   .   . " minmax(2em, auto)  
-        "fit fit fit fit" minmax(0em, auto)     
+        " .   .   .   . " minmax(2em, auto)     
         "fii fii fii fii" minmax(32em, auto)
+        "fit fit fit fit" minmax(0em, auto)  
     }
     .know-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
@@ -316,7 +316,9 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 2em;
         font-weight: 900;
-        transform: translateY(115%);
+        transform: translate(-1%, -98%);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
     }
     
 @media (min-width: 50em) {
@@ -366,9 +368,9 @@ media queries for progressively bigger screen widths
         " .  c3i c3i c3i c3i c3i c3i  . " minmax(12em, auto)
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
         " .  c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)   
-        "fit fit fit fit fit fit fit fit" minmax(0em, auto)    
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)    
         "fii fii fii fii fii fii fii fii" minmax(32em, auto)
+        "fit fit fit fit fit fit fit fit" minmax(0em, auto)   
     }
     .know-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
@@ -396,7 +398,9 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 3em;
         font-weight: 900;
-        transform: translateY(110%);
+        transform: translate(-1%, -113%);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
     }
 }
     
