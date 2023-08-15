@@ -285,9 +285,10 @@ media queries for progressively bigger screen widths
         " .  c3i c3i  . " minmax(12em, auto)
         " .   .   .   . " minmax(2em, auto)
         " .  c3t c3t  . " minmax(12em, auto)
-        " .   .   .   . " minmax(2em, auto)     
+        " .   .   .   . " minmax(2em, auto)  
+        "fit fit fit fit" minmax(0em, auto)   
         "fii fii fii fii" minmax(32em, auto)
-        "fit fit fit fit" minmax(0em, auto)  
+        " .   .   .   . " minmax(4em, auto) 
     }
     .know-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
@@ -306,17 +307,17 @@ media queries for progressively bigger screen widths
     }
 
     .main-container {
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
     }
 
     :root {
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
     }
 
     .final-text {
-        font-size: 2em;
+        font-size: 1.9em;
         font-weight: 900;
-        transform: translate(-1%, -98%);
+        transform: translate(-1%, 102%);
         writing-mode: vertical-rl;
         text-orientation: upright;
     }
@@ -369,8 +370,10 @@ media queries for progressively bigger screen widths
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
         " .  c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
         " .   .   .   .   .   .   .   . " minmax(2em, auto)    
-        "fii fii fii fii fii fii fii fii" minmax(32em, auto)
         "fit fit fit fit fit fit fit fit" minmax(0em, auto)   
+        "fii fii fii fii fii fii fii fii" minmax(32em, auto)
+        " .   .   .   .   .   .   .   . " minmax(6em, auto)  
+
     }
     .know-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
@@ -388,17 +391,17 @@ media queries for progressively bigger screen widths
         background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
     }
     .main-container{
-        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%, rgba(26,34,41,1) 100%);
+        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%,  rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
     }
 
     :root{
-        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%, rgba(26,34,41,1) 100%);
+        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%,  rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
     }
 
     .final-text {
-        font-size: 3em;
+        font-size: 2.7em;
         font-weight: 900;
-        transform: translate(-1%, -113%);
+        transform: translate(-1%, 103%);
         writing-mode: vertical-rl;
         text-orientation: upright;
     }
@@ -443,9 +446,11 @@ media queries for progressively bigger screen widths
         " .  c3i c3i c3i c3i c3i c3i c3i c3i c3i c3i  . " minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         " .  c3t c3t c3t c3t c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)   
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)  
+        "fit fit fit fit fit fit fit fit fit fit fit fit" minmax(0em, auto) 
         "fii fii fii fii fii fii fii fii fii fii fii fii" minmax(32em, auto)
-        "fit fit fit fit fit fit fit fit fit fit fit fit" minmax(0em, auto)  
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(8em, auto)  
+  
     }
 
     .questions {
@@ -481,17 +486,17 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 4em;
         font-weight: 900;
-        transform: translate(-1%, -105%);
+        transform: translate(-1%, 105%);
         writing-mode: vertical-rl;
         text-orientation: upright;
     }
  
     :root {
-        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
+        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 40%, rgba(69,96,117,1) 50%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
     }
 
     .main-container {
-        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 45%, rgba(69,96,117,1) 54%, rgba(26,34,41,1) 100%);
+        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 40%, rgba(69,96,117,1) 50%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%)
     } 
 }
 
