@@ -87,7 +87,7 @@ variables are available to be used anywhere in our html document
     font-size: 6em;
     text-align: center;
     font-weight: 900;
-    color: #2F404D;
+    color: #85EBD9;
 }
 
 .city-text {
@@ -106,18 +106,10 @@ variables are available to be used anywhere in our html document
     color: var(--colour4);
 }
 
-.fade-in-section {
-    opacity: 0;
-    transform: translateY(20vh);
-    visibility: hidden;
-    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-    will-change: opacity, visibility;
-  }
-.fade-in-section.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-  }
+.g-b-bold {
+    font-weight: 900;
+    color: #85EBD9;
+}
 
 /* now we create names for the grid areas for specific elements */
 #banner {
@@ -318,7 +310,7 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 2em;
         font-weight: 900;
-        transform: translateY(120%);
+        transform: translateY(115%);
     }
     
 @media (min-width: 50em) {
@@ -398,7 +390,7 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 3em;
         font-weight: 900;
-        transform: translateY(120%);
+        transform: translateY(110%);
     }
 }
     
@@ -442,7 +434,7 @@ media queries for progressively bigger screen widths
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         " .  c3t c3t c3t c3t c3t c3t c3t c3t c3t c3t  . " minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "fit fit fit fit fit fit fit fit fit fit fit fit" minmax(0em, auto)     
+        "fit fit fit fit fit fit fit fit fit fit fit fit" minmax(0em, 0em)     
         "fii fii fii fii fii fii fii fii fii fii fii fii" minmax(32em, auto)
     }
 
@@ -479,7 +471,7 @@ media queries for progressively bigger screen widths
     .final-text {
         font-size: 5em;
         font-weight: 900;
-        transform: translateY(120%);
+        transform: translateY(60%);
     }
  
     :root {
