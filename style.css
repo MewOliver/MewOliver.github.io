@@ -330,6 +330,7 @@ media queries for progressively bigger screen widths
         transform: translate(-1%, 102%);
         writing-mode: vertical-rl;
         text-orientation: upright;
+        z-index: 1
     }
     
 @media (min-width: 50em) {
@@ -414,6 +415,7 @@ media queries for progressively bigger screen widths
         transform: translate(-1%, 103%);
         writing-mode: vertical-rl;
         text-orientation: upright;
+        z-index: 1
     }
 }
     
