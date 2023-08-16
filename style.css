@@ -200,6 +200,30 @@ variables are available to be used anywhere in our html document
     grid-area: wt4;  
 }
 
+#uplo-image {
+    grid-area: upi;
+}
+
+#uplo-text {
+    grid-area: upt;
+}
+
+#w5 {
+    grid-area: wt5;  
+}
+
+#cont-image {
+    grid-area: coi;
+}
+
+#cont-text {
+    grid-area: cot;
+}
+
+#w6 {
+    grid-area: wt6;  
+}
+
 #year {
     grid-area: yea;
 }
@@ -282,6 +306,16 @@ media queries for progressively bigger screen widths
         " .   .   .   . " minmax(2em, auto)
         "wt4 wt4 wt4 wt4" minmax(12em, auto)
         " .   .   .   . " minmax(2em, auto)
+        "upi upi upi upi" minmax(32em, auto)
+        "upt upt upt upt" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "wt5 wt5 wt5 wt5" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "coi coi coi coi" minmax(32em, auto)
+        "cot cot cot cot" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
+        "wt6 wt6 wt6 wt6" minmax(12em, auto)
+        " .   .   .   . " minmax(2em, auto)
         "yea yea yea yea" minmax(12em, auto)
         " .   .   .   . " minmax(4em, auto)
         " .  c1i c1i  . " minmax(12em, auto)
@@ -301,19 +335,33 @@ media queries for progressively bigger screen widths
         " .   .   .   . " minmax(4em, auto) 
     }
     .know-text{
-        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
+        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0)); 
+        text-align: center; 
     }
         
     .phys-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+        text-align: center; 
     }
     
     .emot-text{
-        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+        text-align: center; 
     }
 
     .inte-text{
         background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        text-align: center; 
+    }
+
+    .uplo-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        text-align: center; 
+    }
+
+    .cont-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        text-align: center; 
     }
 
     .main-container {
@@ -369,6 +417,16 @@ media queries for progressively bigger screen widths
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
         "wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4" minmax(12em, auto)
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "upi upi upi upi upi upi upi upi" minmax(32em, auto)
+        "upt upt upt upt upt upt upt upt" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt5 wt5 wt5 wt5 wt5 wt5 wt5 wt5" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "coi coi coi coi coi coi coi coi" minmax(32em, auto)
+        "cot cot cot cot cot cot cot cot" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "wt6 wt6 wt6 wt6 wt6 wt6 wt6 wt6" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
         "yea yea yea yea yea yea yea yea" minmax(12em, auto)
         " .   .   .   .   .   .   .   . " minmax(4em, auto)
         " .  c1i c1i c1i c1i c1i c1i  . " minmax(12em, auto)
@@ -390,19 +448,34 @@ media queries for progressively bigger screen widths
     }
     .know-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
+        text-align: center;
     }
         
     .phys-text{
         background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
+        text-align: center;
     }
 
     .emot-text{
-        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        background-image: linear-gradient( rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));  
+        text-align: center;
     }
 
     .inte-text{
         background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        text-align: center;
     }
+
+    .uplo-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        text-align: center;
+    }
+
+    .cont-text{
+        background-image: linear-gradient( rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        text-align: center;
+    }
+
     .main-container{
         background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%,  rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
     }
@@ -447,6 +520,14 @@ media queries for progressively bigger screen widths
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
         "wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4 wt4" minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "upi upi upi upi upi upi upi upi upt upt upt upt" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "wt5 wt5 wt5 wt5 wt5 wt5 wt5 wt5 wt5 wt5 wt5 wt5" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "cot cot cot cot coi coi coi coi coi coi coi coi" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "wt6 wt6 wt6 wt6 wt6 wt6 wt6 wt6 wt6 wt6 wt6 wt6" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         "yea yea yea yea yea yea yea yea yea yea yea yea" minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
         " .  c1i c1i c1i c1i c1i c1i c1i c1i c1i c1i  . " minmax(12em, auto)
@@ -474,6 +555,7 @@ media queries for progressively bigger screen widths
     .know-text{
         background-image: linear-gradient(to right, rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
         transform: translateX(-20%);
+        text-align: left;
         width: 130%
     }
         
@@ -485,12 +567,27 @@ media queries for progressively bigger screen widths
     }
 
     .emot-text{
-        background-image: linear-gradient(to right, rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        background-image: linear-gradient(to right, rgba(133, 253, 217, 1),rgba(133, 253, 217, 0));
         transform: translateX(-20%);
+        text-align: left;
         width: 130%
     }
 
     .inte-text{
+        background-image: linear-gradient(to left, rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        transform: translateX(-5%);
+        text-align: right;
+        width: 130%
+    }
+
+    .uplo-text{
+        background-image: linear-gradient(to right, rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
+        transform: translateX(-20%);
+        text-align: left;
+        width: 130%
+    }
+
+    .cont-text{
         background-image: linear-gradient(to left, rgba(61, 137, 141, 1),rgba(133, 253, 217, 0));
         transform: translateX(-5%);
         text-align: right;
