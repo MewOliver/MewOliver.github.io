@@ -365,11 +365,11 @@ media queries for progressively bigger screen widths
     }
 
     .main-container {
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 79%, rgba(26,34,41,1) 90%, rgba(16,20,24,1) 100%);
     }
 
     :root {
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 67%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 59%, rgba(69,96,117,1) 79%, rgba(26,34,41,1) 90%, rgba(16,20,24,1) 100%);
     }
 
     .final-text {
@@ -477,11 +477,11 @@ media queries for progressively bigger screen widths
     }
 
     .main-container{
-        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%,  rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
+        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 74%,  rgba(26,34,41,1) 90%, rgba(16,20,24,1) 100%);
     }
 
     :root{
-        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 62%,  rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
+        background:  linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 54%, rgba(69,96,117,1) 74%,  rgba(26,34,41,1) 90%, rgba(16,20,24,1) 100%);
     }
 
     .final-text {
@@ -604,11 +604,11 @@ media queries for progressively bigger screen widths
     }
  
     :root {
-        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 40%, rgba(69,96,117,1) 50%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
+        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 40%, rgba(69,96,117,1) 60%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%);
     }
 
     .main-container {
-        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 40%, rgba(69,96,117,1) 50%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%)
+        background-image:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(164,164,164,1) 40%, rgba(69,96,117,1) 60%, rgba(26,34,41,1) 84%, rgba(16,20,24,1) 100%)
     } 
 }
 
